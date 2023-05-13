@@ -200,3 +200,4 @@ function updatetotal(){
     
 }
 var iconNumber = document.getElementById('cart-icon');
+
