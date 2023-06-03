@@ -357,13 +357,43 @@ header{
         font-size: 1.5rem;
     }
 }
-.product-divisor{
+.product-divisor-aromanza{
+    background-image: url(../img/aromanza_logo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
-    background-color: rgb(155, 154, 154);
+    background-color: white;
+    height: 10rem;
+    
+}
+.product-divisor-sagrada{
+    background-image: url(../img/sagrada_madre_logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: white;
+    height: 13rem;
+    
+}
+.product-divisor-otros{
+    background-image: url(../img/otros_productos.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: white;
+    height: 13rem;
 }
 @media (min-width: 768px){
     .product-divisor{
