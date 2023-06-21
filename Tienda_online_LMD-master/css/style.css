@@ -526,10 +526,11 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
 }
 .oferta {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #f70a0a;
     background-color: #000;
     text-transform: uppercase;
+    text-decoration: underline;
 }
 .add-cart{
     position: absolute;
