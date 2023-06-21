@@ -367,10 +367,12 @@ header{
     margin-left: 20%;
     margin-bottom: 10%;
     padding: 0.3rem;
+    font-weight: 700;
     
 }
 .informacion button:hover{
     cursor: pointer;
+    background-color: rgb(156, 137, 137);
 }
 .informacion-text{
     color: white;
