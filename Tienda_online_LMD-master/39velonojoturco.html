@@ -1,0 +1,92 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velón Ojo Turco</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo-lau"><img src="img/logo_lau.png"></a>
+            <a href="index.html" class="logo"><button class="button-48" role="button"><span class="text">Tienda</span></button></a>
+            <!-- <a href="contacto.html" class="logo"><button class="button-48" role="button"><span class="text">Contacto</span></button></a> -->
+            <!--Cart-icon-->
+            <div class="cart-icon">
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <span id="cart-count">0</span> 
+            </div>
+        </div>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Tu Carrito</h2>
+                <!--Content-->
+                <div class="cart-content-wrapper">
+                    <div class="cart-content"></div>
+                </div>    
+                <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!--Buy Button-->
+                    <button type="button" class="btn-buy">Realizar Pedido</button>
+                    <!--Cart Close-->
+                    <i class='bx bx-x ' id="close-cart"></i>
+            </div>
+    </header>
+    <div id="notificacion"></div>
+    <!--Shop-->
+    <section class="shop container">
+        <h1 class="section-title producto-h1">Velón Ojo Turco</h1>
+        <!--Content-->
+        <div class="shop-content">
+            <!--Producto-->
+            <div class="producto-box">
+                <div class="slider-frame">
+                    <ul>
+                        <li><img loading="lazy" src="img/velon_ojo_turco_1.jpg" alt="Velón Ojo Turco"></li>
+                        <li><img loading="lazy" src="img/velon_ojo_turco_2.jpg" alt="Velón Ojo Turco"></li>
+                        <li><img loading="lazy" src="img/velon_ojo_turco_3.jpg" alt="Velón Ojo Turco"></li>
+                        <li><img loading="lazy" src="img/velon_ojo_turco_4.jpg" alt="Velón Ojo Turco" class="product-img"></li>
+                    </ul>
+                </div>
+                <h2 class="product-title producto-hidden">Velón Ojo Turco</h2>
+                <span class="price producto-hidden">$980</span>
+                <input class="formulario__submit add-cart" id="cart-icon" type="submit" value="Agregar al Carrito"> 
+                
+            </div>
+            <!--Descripcion-->
+            <form class="formulario">
+                    <h2 class="producto-h2"></h2>
+                    <select id="product-select" class="formulario__campo">
+                        <option value ="Velon Ojo Turco" class="formulario__option" disabled selected>-- Seleccionar fragancias --</option>
+                        <option value="Azul">Azul(Protege La Envidia)</option>
+                        <option value="Celeste">Celeste(Limpieza Energética)</option>
+                        <option value="Rojo">Rojo(Atrae El Amor)</option>
+                        <option value="Amarillo">Amarillo(Abundancia)</option>
+                        <option value="Violeta">Violeta(Transmutación Espiritual)</option>
+                    </select> 
+                    <div> <h2 class="producto-h2">MODO DE USO:<br>
+                        1. Desate la cinta y colóquela debajo del velón.<br>
+                        2. Enciéndalo cerca de la puerta de entrada de su hogar o negocio.<br>
+                        3. Cuando se consuma, coloque la cinta a modo de pulsera para mayor efectividad.</h2>
+                        <p class="producto-p">Contenido: Velon Ojo Turco x 1 unidad.</p>
+                        
+                    </div>
+                </form>
+                
+        </div>
+</section>
+    <footer class="footer">
+        <p class="footer--texto"> Ramiro Cavallero - Todos los derechos Reservados © 2023.</p>
+    </footer>   
+    <button class="buttons"><a href="https://wa.me/3515418960" class="whatsapp-btn"><i class='bx bxl-whatsapp' id="Whatsapp Button" ></i></a>
+    <!--Link to JS-->
+    <script src="js/main.js"></script>
+</body>
+</html>
