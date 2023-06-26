@@ -324,6 +324,21 @@ header{
 .btn-buy:hover{
     background: rgb(8, 90, 45);
 }
+.btn-carrito{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: rgb(4, 214, 99);
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-carrito:hover{
+    background: rgb(8, 90, 45);
+
+}
 #close-cart{
     position: absolute;
     top: 1rem;
