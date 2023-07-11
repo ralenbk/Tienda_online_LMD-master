@@ -687,7 +687,7 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
         width: 100%;
         height: auto;
         margin-bottom: 0.5rem;
-        padding: 3px;
+        padding: 0;
     }
     .img-agregar-carrito{
         margin-bottom: 30px;
