@@ -106,7 +106,7 @@ function buyButtonClicked() {
             products.push(`${title} (${selected}) x ${quantity}`);
         }
         var message = "Hola, quiero hacer un pedido con los siguientes productos:\n\n" + products.join(", \n\n") + " \n\n" + "El total es de: " + document.getElementsByClassName("total-price")[0].innerText;
-        var url = "https://wa.me/3515418960/?text=" + encodeURIComponent(message);
+        var url = "https://wa.me/543404571018/?text=" + encodeURIComponent(message);
         window.open(url);
         while (cartContent.hasChildNodes()) {
             cartContent.removeChild(cartContent.firstChild);
