@@ -451,13 +451,13 @@ header{
 }
 .texto--desactivado{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
 .texto--desactivado-p{
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 @media (min-width: 768px){
