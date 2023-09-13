@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahumerios Palo Santo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W12CHCEBQD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W12CHCEBQD');
+</script>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo-lau"><img src="img/logo_lau.png"></a>
+            <a href="index.html" class="logo"><button class="button-48" role="button"><span class="text">Tienda</span></button></a>
+            <!-- <a href="contacto.html" class="logo"><button class="button-48" role="button"><span class="text">Contacto</span></button></a> -->
+            <!--Cart-icon-->
+            <div class="cart-icon">
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <span id="cart-count">0</span> 
+            </div>
+        </div>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Tu Carrito</h2>
+                <!--Content-->
+                <div class="cart-content-wrapper">
+                    <div class="cart-content"></div>
+                </div>    
+                <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!--Buy Button-->
+                    <button type="button" class="btn-buy">Realizar Pedido</button>
+                    <!--Cart Close-->
+                    <i class='bx bx-x ' id="close-cart"></i>
+            </div>
+    </header>
+    <!--Shop-->
+    <section class="shop container">
+        <h1 class="section-title producto-h1">Sahumerios Palo Santo</h1>
+        <!--Content-->
+        <div class="shop-content">
+            <!--Producto-->
+            <div class="producto-box">
+                <!-- <img src="img/imagen 4.jpeg" alt="Product" class="product-img img-agregar-carrito"> -->
+                <div class="slider-frame">
+                    <ul>
+                        <li><img loading="lazy" src="img/sahu-palo-santo-1.jpg" alt="Sahumerios Palo Santo"></li>
+                        <li><img loading="lazy" src="img/sahu-palo-santo-2.jpg" alt="Sahumerios Palo Santo"></li>
+                        <li><img loading="lazy" src="img/sahu-palo-santo-3.jpg" alt="Sahumerios Palo Santo"></li>
+                        <li><img loading="lazy" src="img/sahu-palo-santo-4.jpg" alt="Sahumerios Palo Santo" class="product-img"></li>
+                    </ul>
+                </div>
+                <h2 class="product-title producto-hidden">Sahumerios Palo Santo</h2>
+                <span class="price producto-hidden">$810</span>
+                <input class="formulario__submit add-cart" id="cart-icon" type="submit" value="Agregar al Carrito">
+            </div>
+            <!--Descripcion-->
+            <form class="formulario">
+                <h2 class="producto-h2"></h2>
+            <select id="product-select" class="formulario__campo">
+                <option value ="Seleccionar fragancias" class="formulario__option" disabled selected>-- Seleccionar fragancias --</option>
+                <option value="Palo Santo - Vainilla">Palo Santo - Vainilla</option>
+                <option value="Palo Santo - Mirra">Palo Santo - Mirra</option>
+                <option value="Palo Santo - Sandalo">Palo Santo - Sandalo</option>
+                <option value="Palo Santo - Lavanda">Palo Santo - Lavanda</option>
+                <option value="Palo Santo - Rosas">Palo Santo - Rosas</option>
+                <option value="Palo Santo - Copal">Palo Santo - Copal</option>
+                <option value="Palo Santo - Romero">Palo Santo - Romero</option>
+                <option value="Palo Santo - Yagra">Palo Santo - Yagra</option>
+                <option value="Palo Santo - Incienso">Palo Santo - Incienso</option>
+                <option value="Palo Santo - Champa">Palo Santo - Champa</option>
+                <option value="Palo Santo">Palo Santo</option>
+            </select> 
+            <div> <h2 class="producto-h2">Encender un sahumerio de Palo Santo es un acto sagrado y purificador. Aumenta la sensación de calma y bienestar atrayendo energías positivas y armoniosas a todos que estén en contacto con este humo sagrado.
+                Composición: madera de palo santo (peruano), aglutinante natural.
+                Incienso Artesanal- Hecho a mano.</h2>
+            <p class="producto-p">Contenido: 8 varillas gruesas de duración extra. Duración: cada varilla dura 1 hora.</p>
+            </form>
+            
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <p class="footer--texto"> Ramiro Cavallero - Todos los derechos Reservados © 2023.</p>
+    </footer>   
+    <button class="buttons"><a href="https://wa.me/543404571018" class="whatsapp-btn"><i class='bx bxl-whatsapp' id="Whatsapp Button" ></i></a>
+    <!--Link to JS-->
+    <script src="js/main.js"></script>
+</body>
+</html>
