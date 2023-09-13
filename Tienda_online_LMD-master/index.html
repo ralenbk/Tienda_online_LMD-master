@@ -784,29 +784,6 @@
     
     <footer class="footer">
         <p class="footer--texto">Ramiro Cavallero - Todos los derechos Reservados © 2023.</p>
-                    <!-- Contador de visitas -->
-    <div>
-        ¡Esta página ha sido visitada <span id="counter">0</span> veces!
-    </div>
-
-    <!-- Script para aumentar el contador -->
-    <script>
-        // Obtén el contador actual del almacenamiento local (puede ser más sofisticado)
-        let visitCount = localStorage.getItem('visitCount');
-
-        // Verifica si ya hay un contador almacenado
-        if (visitCount) {
-            visitCount = parseInt(visitCount) + 1;
-        } else {
-            visitCount = 1;
-        }
-
-        // Actualiza el contador en el almacenamiento local
-        localStorage.setItem('visitCount', visitCount);
-
-        // Muestra el contador en la página
-        document.getElementById('counter').textContent = visitCount;
-    </script>
     </footer>   
     <button class="buttons"><a href="https://wa.me/543404571018" class="whatsapp-btn"><i class='bx bxl-whatsapp' id="Whatsapp Button" ></i></a></>
     <!--Link to JS-->
