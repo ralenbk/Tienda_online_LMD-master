@@ -142,6 +142,12 @@ function quantityChanged(event) {
 // Add To Cart
 function addCartClicked(event) {
     var button = event.target;
+    var selectElement = document.getElementById("product-select");
+    var selectedValue = selectElement.options[selectElement.selectedIndex].value;
+    if (selectedValue === "Seleccionar fragancias") {
+        alert("Por favor, selecciona una fragancia antes de agregar al carrito.");
+        return; // Detiene la ejecución si no se ha seleccionado una opción válida
+    }
     var shopProducts = button.parentElement;
     var title = shopProducts.getElementsByClassName("product-title")[0].innerText;
     var price = shopProducts.getElementsByClassName("price")[0].innerText;
@@ -149,6 +155,11 @@ function addCartClicked(event) {
     var selectElement = document.getElementById("product-select");
     var selectedValue = selectElement.options[selectElement.selectedIndex].value;
     var quantity = 1;
+    // Verifica si el producto tiene la clase "no-stock"
+    if (shopProducts.classList.contains("no-stock")) {
+        alert("Este producto está agotado y no se puede agregar al carrito.");
+        return;
+    }
     var cartContent = document.getElementsByClassName("cart-content")[0];
     var cartBoxes = cartContent.getElementsByClassName("cart-box");
     for (var i = 0; i < cartBoxes.length; i++) {
