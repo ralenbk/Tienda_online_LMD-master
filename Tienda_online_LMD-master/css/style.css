@@ -440,7 +440,7 @@ header{
     
 }
 .product-divisor-otros{
-    background-image: url(../img/otros_productos.png);
+    background-image: url(../img/Banner_otros_productos.png);
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
@@ -449,7 +449,23 @@ header{
     font-size: 1.5rem;
     font-weight: 500;
     background-color: white;
-    height: 13rem;
+    height: 18rem;
+    background-size: cover;
+    
+}
+.product-divisor-hornitos{
+    background-image: url(../img/Banner_hornitos.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: white;
+    height: 18rem;
+    background-size: cover;
+    
 }
 .texto--desactivado{
     text-align: center;
