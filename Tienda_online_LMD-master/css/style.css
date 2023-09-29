@@ -566,6 +566,12 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
     font-size: 1.5rem;
     color: #ffffbf;
 }
+.pricenone{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #ffffbf;
+    text-decoration: line-through;
+}
 .desc-prod {
     font-weight: normal;
     font-size: 1.2rem;
