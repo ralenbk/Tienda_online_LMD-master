@@ -50,13 +50,23 @@ gtag('config', 'G-W12CHCEBQD');
                     <i class='bx bx-x ' id="close-cart"></i>
             </div>
     </header>
+    <!-- <nav class="filtrar-marcas">
+        <a href="#aromanza" class="active">aromanza</a>
+        <a href="#sagrada">Sagrada Madre</a>
+        <a href="#iluminarte">Iluminarte</a>
+        <a href="#hornitos">Hornitos</a>
+        <a href="#otros_productos">Otros Productos</a>
+
+        <span class="animate" style="--i:2;"></span>
+        <span class="active-nav"></span>
+    </nav> -->
     <!--Shop-->
     <section class="shop container">
         <h2 class="section-title">Nuestros Productos</h2>
         <h3 class="stock-advise">¡Todos los productos están sujetos a stock, tu consulta no molesta!<br> 
         ¡Realiza tu pedido agregando los productos al carrito!</h3>
         <!--Content-->
-        <h3 class="product-divisor-aromanza"></h3>
+        <h3 class="product-divisor-aromanza" id="aromanza"></h3>
         <div class="shop-content">
             <!--Box 2.0-->
             <div class="product-box">
@@ -215,7 +225,7 @@ gtag('config', 'G-W12CHCEBQD');
                 
             </div>
         </div>
-        <h3 class="product-divisor-sagrada"></h3>
+        <h3 class="product-divisor-sagrada" id="sagrada"></h3>
         <div class="shop-content">
             <!-- INICIO SAGRADA MADRE -->
             <!--Box 28-->
@@ -593,7 +603,7 @@ gtag('config', 'G-W12CHCEBQD');
             </div>
         </div>
         <!-- INICIO ILUMINARTE -->
-        <h3 class="product-divisor-iluminarte"></h3>
+        <h3 class="product-divisor-iluminarte" id="iluminarte"></h3>
         <div class="shop-content">
             <!--Box 32-->
             <div class="product-box">
@@ -692,17 +702,15 @@ gtag('config', 'G-W12CHCEBQD');
                 
             </div>
         </div>
-        <!-- INICIO HORNITOS
-        <h3 class="product-divisor-hornitos"></h3>
+        <!-- INICIO HORNITOS -->
+        <h3 class="product-divisor-hornitos" id="hornitos"></h3>
         <div class="shop-content">
-            
+            <!--Box 31-->
             <div class="product-box">
-            
                     <picture>
                     <source srcset="img/hornito_ceramica_iluminarte_index.webp" type="image/webp" class="product-img">    
                     <img loading="lazy" src="img/hornito_ceramica_iluminarte_index.webp" alt="Hornito Iluminarte" class="product-img">
                     </picture>
-                
                 <p class="marca">Iluminarte</p>
                 <h2 class="product-title">Hornito Circulos</h2>
                 <div>
@@ -711,9 +719,54 @@ gtag('config', 'G-W12CHCEBQD');
                 <span class="price">$1.850</span>
                 
             </div> 
-        </div> -->
+            <!--Box 31-->
+            <div class="product-box">
+                <picture>
+                <source srcset="img/hornito_clindrico_calado.webp" type="image/webp" class="product-img">    
+                <img loading="lazy" src="img/hornito_clindrico_calado.webp" alt="Hornito Iluminarte" class="product-img">
+                </picture>
+            
+            <p class="marca">Iluminarte</p>
+            <h2 class="product-title">Hornito Cilindrico Calado</h2>
+            <div>
+            <a href="55hornitocilcal.html" class="informacion"><button>Más Información<i class='bx bxs-hand-left'></i></button></a>
+            </div>
+            <span class="price">$1.670</span>
+            
+            </div> 
+            <!--Box 31-->
+            <div class="product-box">
+            <picture>
+            <source srcset="img/img_webp/hornito-rustico-index.webp" type="image/webp" class="product-img">    
+            <img loading="lazy" src="img/hornito_rustico_index.jpeg" alt="Hornito Iluminarte" class="product-img">
+            </picture>
+        
+            <p class="marca"></p>
+            <h2 class="product-title">Hornito Rustico</h2>
+            <div>
+            <a href="56hornitorust.html" class="informacion"><button>Más Información<i class='bx bxs-hand-left'></i></button></a>
+            </div>
+            <span class="price">$1.800</span>
+        
+        </div> 
+    <!--Box 31-->
+    <div class="product-box">
+        <picture>
+        <source srcset="img/img_webp/hornito-aman-chico-index.webp" type="image/webp" class="product-img">    
+        <img loading="lazy" src="img/hornito_aman_chico_index.jpg" alt="Hornito Iluminarte" class="product-img">
+        </picture>
+    
+    <p class="marca">Iluminarte</p>
+    <h2 class="product-title">Hornito Amanecer Chico</h2>
+    <div>
+    <a href="57hornitoaman.html" class="informacion"><button>Más Información<i class='bx bxs-hand-left'></i></button></a>
+    </div>
+    <span class="price">$1.620</span>
+    
+</div> 
+        </div>
         <!-- INICIO OTROS PRODUCTOS -->
-        <h3 class="product-divisor-otros"></h3>
+        <h3 class="product-divisor-otros" id="otros_productos"></h3>
         <div class="shop-content">   
             <!--Box 31-->
             <div class="product-box">
@@ -977,7 +1030,7 @@ gtag('config', 'G-W12CHCEBQD');
     <footer class="footer">
         <p class="footer--texto">Ramiro Cavallero - Todos los derechos Reservados © 2023.</p>
     </footer>   
-    <button class="buttons"><a href="https://wa.me/543404571018" class="whatsapp-btn"><i class='bx bxl-whatsapp' id="Whatsapp Button" ></i></a></>
+    <button class="buttons"><a href="https://wa.me/543404571018" class="whatsapp-btn"><i class='bx bxl-whatsapp' id="Whatsapp Button" ></i></a></d>
     <!--Link to JS-->
     <script src="js/main.js"></script>
 </body>
