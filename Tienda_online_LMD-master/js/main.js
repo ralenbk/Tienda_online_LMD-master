@@ -2,6 +2,16 @@ let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('.cart');
 let closeCart = document.querySelector('#close-cart');
 let cartCount = document.querySelector('#cart-count');
+let findIcon = document.querySelector('#find-icon');
+let find= document.querySelector('.find');
+let closeFind = document.querySelector('#close-find')
+const botones = {
+    aromanza: document.getElementById('aromanza'),
+    sagrada: document.getElementById('sagrada'),
+    iluminarte: document.getElementById('iluminarte'),
+    hornitos: document.getElementById('hornitos'),
+    otros_productos: document.getElementById('otros_productos')
+};
 
 // Open Cart
 cartIcon.onclick = () => {
@@ -12,7 +22,14 @@ cartIcon.onclick = () => {
 closeCart.onclick = () => {
     cart.classList.remove('active');
 };
-
+// open find
+findIcon.onclick = () => {
+    find.classList.add('active');
+}
+// close find
+closeFind.onclick = () => {
+    find.classList.remove('active');
+}
 // Cart Working JS
 window.addEventListener("load", ready);
 
@@ -234,3 +251,11 @@ function updateCartCount() {
     var count = cartContent.childElementCount;
     cartCount.innerText = count;
 }
+
+//Findbutton work
+function cerrarFind () {
+    find.classList.remove('active');
+}
+document
+        .getElementsByClassName("marcas")[0]
+        .addEventListener("click", cerrarFind);
