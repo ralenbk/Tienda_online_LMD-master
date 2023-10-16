@@ -21,14 +21,6 @@ cartIcon.onclick = () => {
 // Close Cart
 closeCart.onclick = () => {
     cart.classList.remove('active');
-};
-// open find
-findIcon.onclick = () => {
-    find.classList.add('active');
-}
-// close find
-closeFind.onclick = () => {
-    find.classList.remove('active');
 }
 // Cart Working JS
 window.addEventListener("load", ready);
@@ -259,3 +251,12 @@ function cerrarFind () {
 document
         .getElementsByClassName("marcas")[0]
         .addEventListener("click", cerrarFind);
+
+// open find
+findIcon.onclick = () => {
+    find.classList.add('active');
+}
+// close find
+closeFind.onclick = () => {
+    find.classList.remove('active');
+}
