@@ -112,7 +112,7 @@ function buyButtonClicked() {
             var price = priceElement.innerText;
             var quantity = quantityElement.value;
             var selected = selectedElement.innerText;
-            products.push(`${title} (${selected}) x ${quantity}`);
+            products.push(`${title} (${selected}) x ${quantity} ${price}`);
         }
         var message = "Hola, quiero hacer un pedido con los siguientes productos:\n\n" + products.join(", \n\n") +
         " \n\n" + "El total es de: " + document.getElementsByClassName("total-price")[0].innerText;
