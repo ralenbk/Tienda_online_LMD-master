@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Puntos de Entrega</title>
+    <style>
+        /* Estilos para el contenedor del mapa */
+        #map {
+            height: 400px;
+            width: 100%;
+            margin-top: 20px; /* Añadido margen superior para separar el mapa de los botones */
+        }
+
+        /* Estilos para los botones */
+        .map-btn {
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block; /* Cambiado a 'block' para que los botones sean visibles */
+        }
+
+        .map-btn:hover {
+            background-color: #006F8B;
+        }
+    </style>
+    <!-- Incluir la hoja de estilo de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <h1>Mapa de Puntos de Entrega</h1>
+
+    <!-- Contenedor del mapa -->
+    <div id="map"></div>
+
+    <!-- Botones -->
+    <button class="map-btn" id="como-llegar-btn">Seleccione una ubicación</button>
+    <button class="map-btn" id="ubicacion-1-btn"></button>
+    <button class="map-btn" id="ubicacion-2-btn"></button>
+
+    <!-- Incluir la biblioteca Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+        // Función de inicialización del mapa
+        function initMap() {
+            // Coordenadas de los puntos de entrega
+            var puntosDeEntrega = [
+                { lat: -31.419853, lng: -64.188715, nombre: 'Patio Olmos' },
+                { lat: -31.387167, lng: -64.204146, nombre: 'Monseñor Pablo Cabrera' },
+                // Agrega más puntos según sea necesario
+            ];
+
+            // Configuración del mapa
+            var map = L.map('map').setView([-31.403, -64.190], 13); // Centro del mapa (coordenadas de Córdoba, Argentina)
+
+            // Agregar capa de mapa base (por ejemplo, OpenStreetMap)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+            // Agregar marcadores para cada punto de entrega
+            puntosDeEntrega.forEach(function (punto, index) {
+                L.marker([punto.lat, punto.lng]).addTo(map).bindPopup(punto.nombre);
+
+                // Asignar nombre y enlace a los botones de ubicación
+                var btn = document.getElementById('ubicacion-' + (index + 1) + '-btn');
+                btn.innerText = punto.nombre;
+                btn.dataset.lat = punto.lat;
+                btn.dataset.lng = punto.lng;
+            });
+
+            // Obtener referencia al botón "Cómo llegar"
+            var comoLlegarBtn = document.getElementById('como-llegar-btn');
+
+            // Obtener referencias a los botones de ubicación
+            var ubicacion1Btn = document.getElementById('ubicacion-1-btn');
+            var ubicacion2Btn = document.getElementById('ubicacion-2-btn');
+
+            // Manejar el clic en el botón "Cómo llegar"
+            comoLlegarBtn.addEventListener('click', function () {
+                // Mostrar los botones de ubicación al hacer clic
+                ubicacion1Btn.style.display = 'block';
+                ubicacion2Btn.style.display = 'block';
+            });
+
+            // Manejar el clic en los botones de ubicación
+            function handleUbicacionClick(btn) {
+                var enlaceSeleccionado = window.confirm('¿Estás seguro de seleccionar ' + btn.innerText + '?');
+                if (enlaceSeleccionado) {
+                    window.open('https://www.google.com/maps/dir//' + btn.dataset.lat + ',' + btn.dataset.lng, '_blank');
+                }
+            }
+
+            ubicacion1Btn.addEventListener('click', function () {
+                handleUbicacionClick(ubicacion1Btn);
+            });
+
+            ubicacion2Btn.addEventListener('click', function () {
+                handleUbicacionClick(ubicacion2Btn);
+            });
+        }
+
+        // Llama a la función de inicialización del mapa cuando la página esté completamente cargada
+        document.addEventListener('DOMContentLoaded', initMap);
+    </script>
+</body>
+</html>
