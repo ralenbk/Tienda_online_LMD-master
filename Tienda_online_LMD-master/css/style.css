@@ -570,6 +570,14 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
     left: 0;
     bottom: 0;
 }
+.price-product{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #000000;
+    position: relative;
+    
+
+}
 .pricenone{
     font-weight: 500;
     font-size: 1.5rem;
@@ -601,8 +609,8 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
     position: absolute;
     right: 30px;
     bottom: 50px;
-    background: black;
-    color: var(--bg-color);
+    background: rgb(4, 214, 99);
+    color: var(--text-color);
     padding: 10px;
     cursor: pointer;
 }
@@ -611,14 +619,14 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
         position: absolute;
         right:8px ;
         bottom: 3px;
-        background: black;
+        background: rgb(4, 214, 99);
         color: var(--bg-color);
         padding: 10px;
         cursor: pointer;
 }
 }
 .add-cart:hover{
-    background: black;
+    background: rgb(157, 188, 148);
 }
 .marca{
     position: absolute;
@@ -661,7 +669,7 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
 }
 .formulario__submit:hover {
     cursor: pointer;
-    background-color: rgb(27, 29, 29);;
+    background-color: rgb(8, 90, 45);;
 }
 .submit-button{
     text-align: center;
