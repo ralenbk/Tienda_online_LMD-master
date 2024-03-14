@@ -160,7 +160,7 @@ function addCartClicked(event) {
     }
     var shopProducts = button.parentElement;
     var title = shopProducts.getElementsByClassName("product-title")[0].innerText;
-    var price = shopProducts.getElementsByClassName("price")[0].innerText;
+    var price = shopProducts.getElementsByClassName("price-product")[0].innerText;
     var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
     var selectElement = document.getElementById("product-select");
     var selectedValue = selectElement.options[selectElement.selectedIndex].value;
