@@ -244,19 +244,46 @@ function updateCartCount() {
     cartCount.innerText = count;
 }
 
-//Findbutton work
-function cerrarFind () {
-    find.classList.remove('active');
-}
-document
-        .getElementsByClassName("marcas")[0]
-        .addEventListener("click", cerrarFind);
+//Search Input
 
-// open find
-findIcon.onclick = () => {
-    find.classList.add('active');
-}
-// close find
-closeFind.onclick = () => {
-    find.classList.remove('active');
-}
+document.querySelector('.search-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const query = document.querySelector('.search-input').value.toLowerCase();
+    const products = Array.from(document.querySelectorAll('.wsk-cp-product'));
+    
+    // Ocultar todos los productos primero
+    products.forEach(product => {
+        product.style.display = 'none';
+    });
+
+    // Crear un contenedor temporal para productos visibles
+    const visibleProducts = [];
+
+    // Filtrar productos y agregar los visibles al array
+    products.forEach(function(product) {
+        const title = product.querySelector('.title-product h3').textContent.toLowerCase();
+        const marcaElement = product.querySelector('.category-marca h3');
+        const typeProduct = product.querySelector('.category-marca span');
+        const marca = marcaElement ? marcaElement.textContent.toLowerCase() : '';
+        const tipo = typeProduct ? typeProduct.textContent.toLowerCase() : '';
+
+        if (title.includes(query) || marca.includes(query) || tipo.includes(query)) {
+            visibleProducts.push(product);
+        }
+    });
+
+    // Obtener el contenedor de productos
+    const container = document.querySelector('.shop-content');
+
+    // Mostrar los productos visibles y moverlos al principio
+    visibleProducts.forEach(product => {
+        container.prepend(product);  // Mueve el producto al principio del contenedor
+        product.style.display = 'block';  // Muestra el producto
+    });
+
+    // Asegurarse de que el contenedor de productos no visibles esté vacío
+    const hiddenProducts = products.filter(product => !visibleProducts.includes(product));
+    hiddenProducts.forEach(product => {
+        product.style.display = 'none';  // Oculta los productos no visibles
+    });
+});

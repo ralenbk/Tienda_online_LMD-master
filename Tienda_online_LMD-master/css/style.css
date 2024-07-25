@@ -26,6 +26,7 @@ img {
 body{
     color: var(--text-color);
     background-color: rgb(232, 223, 214);
+    padding-top: 4.5rem;
 }
 .container{
     max-width: 1068px;
@@ -779,34 +780,7 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
         height: auto;
         margin-bottom: 0.5rem;
     }
-    .product-divisor-otros{
-        background-image: url(../img/Banner_otros_productos.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        text-align: center;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-        background-color: white;
-        height: 10rem;
-        background-size: contain;
-        
-    }
-    .product-divisor-hornitos{
-        background-image: url(../img/Banner_hornitos.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        text-align: center;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-        background-color: white;
-        height: 10rem;
-        background-size: contain;
-        
-    }
+
     .footer-common-section {
         display: flex;
         justify-content: space-between;
@@ -839,34 +813,7 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
         padding: 0;
     }
     
-    .product-divisor-otros{
-        background-image: url(../img/Banner_otros_productos.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        text-align: center;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-        background-color: white;
-        height: 10rem;
-        background-size: contain;
-        
-    }
-    .product-divisor-hornitos{
-        background-image: url(../img/Banner_hornitos.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        text-align: center;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-        background-color: white;
-        height: 10rem;
-        background-size: contain;
-        
-    }
+
     .footer-common-section {
         display: flex;
         justify-content: space-between;
@@ -1026,9 +973,9 @@ body {
 
 .wsk-cp-text .category > span {
     padding: 12px 30px;
-    /* border: 1px solid #313131; */
-    background: transparent;
-    color: transparent;
+    border: 1px solid #313131;
+    background: #000;
+    color: #fff;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     border-radius: 27px;
     transition: all 0.05s ease-in-out;
@@ -1191,4 +1138,45 @@ a.buy-btn:focus {
     justify-content: center;
 }
 
+/* Estilos para el formulario de búsqueda */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    margin: 20px 0; /* Ajusta el margen según sea necesario */
+}
 
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+.search-button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-left: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-button i {
+    font-size: 18px;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
+
+.find {
+    padding-top: 10rem;
+}
+
+.category-marca {
+    color: transparent;
+}

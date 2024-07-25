@@ -25,64 +25,36 @@ gtag('config', 'G-W12CHCEBQD');
     <header>
         <div class="nav container">
             <!-- <a href="index.html" class="logo-lau"><img src="img/logo_lau3.png" alt="Logo"></a> -->
-                <!--find-icon-->
-                <div class="find-icon">
-                    <i class='bx bx-menu' id="find-icon"> </i></i>
-                </div>
             <a href="home.html" class="logo"><button class="button-48" role="button"><span class="text">Tienda</span></button></a>
             <!--Cart-icon-->
             <div class="cart-icon">
-            <i class='bx bx-shopping-bag' id="cart-icon"></i>
-            <span id="cart-count">0</span>
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+                <span id="cart-count">0</span>
             </div>
         </div>
-            <!--Cart-->
-            <div class="cart">
-                <h2 class="cart-title">Tu Carrito</h2>
-                <!--Content-->
-                <div class="cart-content-wrapper">
-                    <div class="cart-content"></div>
-                </div>    
-                <!--Total-->
-                    <div class="total">
-                        <div class="total-title">Total</div>
-                        <div class="total-price">$0</div>
-                    </div>
-                    <!--Buy Button-->
-                    <button type="button" class="btn-buy">Realizar Pedido</button>
-                    <!--Cart Close-->
-                    <i class='bx bx-x ' id="close-cart"></i>
+        <!--Cart-->
+        <div class="cart">
+            <h2 class="cart-title">Tu Carrito</h2>
+            <!--Content-->
+            <div class="cart-content-wrapper">
+                <div class="cart-content"></div>
+            </div>    
+            <!--Total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
             </div>
-            <!-- FIND -->
-            <div class="find">
-                <h2 class="find-title">Filtrar Secciones</h2>
-                <!--Content-->
-                <div class="find-content-wrapper">
-                    <div class="find-content"></div>
-                </div>    
-                <!--secciones para filtrar-->
-                    <div class="marcas">
-                        
-                        <a href="#aromanza" class="marcas-list"><button class="button-48" role="button"><span class="text">Aromanza</span></button></a>
-                        <a href="#sagrada" class="marcas-list"><button class="button-48" role="button"><span class="text">Sagrada Madre</span></button></a>
-                        <a href="#iluminarte" class="marcas-list"><button class="button-48" role="button"><span class="text">Iluminarte</span></button></a>
-                        <a href="#hornitos" class="marcas-list"><button class="button-48" role="button"><span class="text">Hornitos</span></button></a>
-                        <a href="#otros_productos" class="marcas-list"><button class="button-48" role="button"><span class="text">Otros Productos</span></button></a>
-                    </div>
-                    <!--find Close-->
-                    <i class='bx bx-x ' id="close-find"></i>
-            </div>
+            <!--Buy Button-->
+            <button type="button" class="btn-buy">Realizar Pedido</button>
+            <!--Cart Close-->
+            <i class='bx bx-x ' id="close-cart"></i>
+        </div>
+        <!-- FIND -->
+        <form class="search-form" action="#" method="get">
+            <input type="text" name="search" class="search-input" placeholder="Buscar productos...">
+            <button type="submit" class="search-button"><i class='bx bx-search'></i></button>
+        </form>
     </header>
-    <!-- <nav class="filtrar-marcas">
-        <a href="#aromanza" class="active">aromanza</a>
-        <a href="#sagrada">Sagrada Madre</a>
-        <a href="#iluminarte">Iluminarte</a>
-        <a href="#hornitos">Hornitos</a>
-        <a href="#otros_productos">Otros Productos</a>
-
-        <span class="animate" style="--i:2;"></span>
-        <span class="active-nav"></span>
-    </nav> -->
     <!--Shop-->
     <section class="shop container">
         
@@ -106,7 +78,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <div class="category">
                             <span>$1.680</span>
                         </div>
-                        
+                        <div class="category-marca">
+                            <h3>aromanza</h3>
+                            <span>Sahumerio Sahumerios</span>
+                        </div>
                         <div class="card-footer">
                             <div class="wcf-left"><span class="price">$1.680</span></div>
                             <div class="wcf-right">
@@ -133,6 +108,10 @@ gtag('config', 'G-W12CHCEBQD');
                         </div>
                         <div class="category">
                             <span>$1.640</span>
+                        </div>
+                        <div class="category-marca">
+                            <h3>aromanza</h3>
+                            <span>Sahumerio Sahumerios</span>
                         </div>
                         <div class="card-footer">
                             <div class="wcf-left"><span class="price">$1.640</span></div>
@@ -162,6 +141,10 @@ gtag('config', 'G-W12CHCEBQD');
                             <span>$1.930</span>
                         </div>
                         
+                        <div class="category-marca">
+                            <h3>aromanza</h3>
+                            <span>Sahumerio Sahumerios</span>
+                        </div>
                         <div class="card-footer">
                             <div class="wcf-left"><span class="price">$1.930</span></div>
                             <div class="wcf-right">
@@ -190,6 +173,10 @@ gtag('config', 'G-W12CHCEBQD');
                             <span>$1.980</span>
                         </div>
                         
+                        <div class="category-marca">
+                            <h3>aromanza</h3>
+                            <span>Sahumo</span>
+                        </div>
                         <div class="card-footer">
                             <div class="wcf-left"><span class="price">$1.980</span></div>
                             <div class="wcf-right">
@@ -216,6 +203,10 @@ gtag('config', 'G-W12CHCEBQD');
                             <h3>Tibetanos</h3>
                         </div>
                             <span>$2.450</span>
+                        </div>
+                        <div class="category-marca">
+                            <h3>aromanza</h3>
+                            <span>Sahumerio Sahumerios</span>
                         </div>
                         <div class="card-footer">
                             <div class="wcf-left"><span class="price">$2.450</span></div>
@@ -244,6 +235,10 @@ gtag('config', 'G-W12CHCEBQD');
                             </div>
                             <span>$1.660</span>
                         </div>
+                        <div class="category-marca">
+                            <h3>aromanza</h3>
+                            <span>Sahumerio Sahumerios</span>
+                        </div>
                         <div class="card-footer">
                             <div class="wcf-left"><span class="price">$1.660</span></div>
                             <div class="wcf-right">
@@ -270,6 +265,10 @@ gtag('config', 'G-W12CHCEBQD');
                                 <h3>Rama</h3>
                             </div>
                             <span>$2.320</span>
+                        </div>
+                        <div class="category-marca">
+                        <h3>aromanza</h3>
+                        <span>Sahumerio Sahumerios</span>
                         </div>
                         <div class="card-footer">
                             <div class="wcf-left"><span class="price">$2.320</span></div>
@@ -313,6 +312,10 @@ gtag('config', 'G-W12CHCEBQD');
                         </div>
                         <span>$1.250</span>
                     </div>
+                    <div class="category-marca">
+                            <h3>aromanza</h3>
+                            <span>Sahumerio Sahumerios</span>
+                    </div>
                     <div class="card-footer">
                         <div class="wcf-left"><span class="price">$1.250</span></div>
                         <div class="wcf-right">
@@ -339,6 +342,10 @@ gtag('config', 'G-W12CHCEBQD');
                             <h3>Kit Siete <br> Chakras</h3>
                         </div>
                         <span>$8.740</span>
+                    </div>
+                    <div class="category-marca">
+                            <h3>aromanza</h3>
+                            <span>Sahumerio Sahumerios</span>
                     </div>
                     <div class="card-footer">
                         <div class="wcf-left"><span class="price">$8.740</span></div>
@@ -388,6 +395,10 @@ gtag('config', 'G-W12CHCEBQD');
                         </div>
                         <span>$1.870</span>
                     </div>
+                    <div class="category-marca">
+                            <h3>Sagrada Madre>
+                            <span>Sahumerio Sahumerios</span>
+                    </div>
                     <div class="card-footer">
                         <div class="wcf-left"><span class="price">$1.870</span></div>
                         <div class="wcf-right">
@@ -414,6 +425,10 @@ gtag('config', 'G-W12CHCEBQD');
                             <h3>Energía Limpia</h3>
                         </div>
                         <span>1.860</span>
+                    </div>
+                    <div class="category-marca">
+                            <h3>Sagrada Madre>
+                                <span>Sahumerio Sahumerios</span>
                     </div>
                     <div class="card-footer">
                         <div class="wcf-left"><span class="price">$1.860</span></div>
@@ -442,6 +457,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$2.140</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$2.140</span></div>
                     <div class="wcf-right">
@@ -468,6 +487,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Natural</h3>
                     </div>
                     <span>$1.860</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.860</span></div>
@@ -496,6 +519,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$2.140</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$2.140</span></div>
                     <div class="wcf-right">
@@ -522,6 +549,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Sahumerio Sagrado</h3>
                     </div>
                     <span>$2.010</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$2.010</span></div>
@@ -550,6 +581,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$3.290</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$3.290</span></div>
                     <div class="wcf-right">
@@ -576,6 +611,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Gaia Blend Masala</h3>
                     </div>
                     <span>$3.290</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$3.290</span></div>
@@ -604,6 +643,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$2.180</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$2.180</span></div>
                     <div class="wcf-right">
@@ -630,6 +673,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Sahumerio Palo <br> Santo</h3>
                     </div>
                     <span>$1.680</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.680</span></div>
@@ -658,6 +705,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$1.890</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.890</span></div>
                     <div class="wcf-right">
@@ -684,6 +735,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Artesano x30</h3>
                     </div>
                     <span>$5.360</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumerio Sahumerios</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$5.360</span></div>
@@ -728,6 +783,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$1.910</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Pastilla</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.910</span></div>
                     <div class="wcf-right">
@@ -754,6 +813,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Bombas Herbal</h3>
                     </div>
                     <span>$890</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$890</span></div>
@@ -782,6 +845,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$3.720</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumador</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$3.720</span></div>
                     <div class="wcf-right">
@@ -808,6 +875,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Hierbas</h3>
                     </div>
                     <span>$720</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumador</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$720</span></div>
@@ -836,6 +907,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$1.960</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Aromatizante</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.960</span></div>
                     <div class="wcf-right">
@@ -863,6 +938,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$1.960</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Aromatizante</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.960</span></div>
                     <div class="wcf-right">
@@ -889,6 +968,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Siete Chakras</h3>
                     </div>
                     <span>$1.460</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Pastilla</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.460</span></div>
@@ -933,6 +1016,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$680</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Pastilla</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$680</span></div>
                     <div class="wcf-right">
@@ -959,6 +1046,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Bombas Herbal XL</h3>
                     </div>
                     <span>$1.930</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.930</span></div>
@@ -987,6 +1078,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$6.400</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Kit</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$6.400</span></div>
                     <div class="wcf-right">
@@ -1013,6 +1108,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Kit Turmalina</h3>
                     </div>
                     <span>$10.270</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Kit</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$10.270</span></div>
@@ -1041,6 +1140,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$8.390</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Kit</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$8.390</span></div>
                     <div class="wcf-right">
@@ -1067,6 +1170,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Kit Luz</h3>
                     </div>
                     <span>$11.380</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Kit</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$11.380</span></div>
@@ -1095,6 +1202,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$8.290</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Kit</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$8.290</span></div>
                     <div class="wcf-right">
@@ -1121,6 +1232,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Pastilla Defumación</h3>
                     </div>
                     <span>$1.850</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Pastilla Defumacion</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.850</span></div>
@@ -1149,6 +1264,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$1.860</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Pastilla Bombita</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.860</span></div>
                     <div class="wcf-right">
@@ -1175,6 +1294,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Bombita Defumación <br> Activada</h3>
                     </div>
                     <span>$1.580</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Pastilla Bombita</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.580</span></div>
@@ -1203,6 +1326,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$780</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Pastilla Bombita</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$780</span></div>
                     <div class="wcf-right">
@@ -1230,6 +1357,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$1.860</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Defumacion Pastilla Kit</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.860</span></div>
                     <div class="wcf-right">
@@ -1256,6 +1387,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Sahumitos</h3>
                     </div>
                     <span>$1.390</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Sagrada Madre</h3>
+                            <span>Sahumo</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.390</span></div>
@@ -1289,6 +1424,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$3.490</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Vela Aromatica</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$3.490</span></div>
                     <div class="wcf-right">
@@ -1315,6 +1454,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Velón Ojo Turco</h3>
                     </div>
                     <span>$3.290</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Vela Aromatica</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$3.290</span></div>
@@ -1343,6 +1486,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$1.870</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Vela Aromatica</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.870</span></div>
                     <div class="wcf-right">
@@ -1369,6 +1516,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Vela Aromática <br> en lata Premium</h3>
                     </div>
                     <span>$5.480</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Vela Aromatica</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$5.480</span></div>
@@ -1397,6 +1548,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$2.320</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Vela Aromatica</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$2.320</span></div>
                     <div class="wcf-right">
@@ -1424,6 +1579,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$2.890</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Vela Aromatica</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$2.890</span></div>
                     <div class="wcf-right">
@@ -1450,6 +1609,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Velitas de noche<br> x6</h3>
                     </div>
                     <span>$1.650</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Vela Aromatica</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$1.650</span></div>
@@ -1482,6 +1645,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$4.320</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Horno</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$4.320</span></div>
                     <div class="wcf-right">
@@ -1508,6 +1675,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Hornito Buho</h3>
                     </div>
                     <span>$5.380</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Horno</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$5.380</span></div>
@@ -1536,6 +1707,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$3.840</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Horno</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$3.840</span></div>
                     <div class="wcf-right">
@@ -1562,6 +1737,10 @@ gtag('config', 'G-W12CHCEBQD');
                         <h3>Hornito Cilindrico<br> Calado</h3>
                     </div>
                     <span>$3.760</span>
+                </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Horno</span>
                 </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$3.760</span></div>
@@ -1590,6 +1769,10 @@ gtag('config', 'G-W12CHCEBQD');
                     </div>
                     <span>$3.890</span>
                 </div>
+                <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Horno</span>
+                </div>
                 <div class="card-footer">
                     <div class="wcf-left"><span class="price">$3.890</span></div>
                     <div class="wcf-right">
@@ -1616,6 +1799,10 @@ gtag('config', 'G-W12CHCEBQD');
                     <h3>Hornito Amanecer<br> Chico</h3>
                 </div>
                 <span>$3.790</span>
+            </div>
+            <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Horno</span>
             </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$3.790</span></div>
@@ -1648,6 +1835,10 @@ gtag('config', 'G-W12CHCEBQD');
                 </div>
                 <span>$1.280</span>
             </div>
+            <div class="category-marca">
+                            <h3>Bangladesh</h3>
+                            <span>Sahumerio Sahumerios</span>
+            </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$1.280</span></div>
                 <div class="wcf-right">
@@ -1674,6 +1865,10 @@ gtag('config', 'G-W12CHCEBQD');
                     <h3>Aromatizante Textil</h3>
                 </div>
                 <span>$2.750</span>
+            </div>
+            <div class="category-marca">
+                            <h3>Aero Soft</h3>
+                            <span>Aromatizante Ropa Textil</span>
             </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$2.750</span></div>
@@ -1702,6 +1897,10 @@ gtag('config', 'G-W12CHCEBQD');
                 </div>
                 <span>$5.380</span>
             </div>
+            <div class="category-marca">
+                            <h3>Aero Soft</h3>
+                            <span>Aromatizante Ropa Textil</span>
+            </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$5.380</span></div>
                 <div class="wcf-right">
@@ -1728,6 +1927,10 @@ gtag('config', 'G-W12CHCEBQD');
                     <h3>Difusor Aromatico<br> Con Varillas</h3>
                 </div>
                 <span>$3.740</span>
+            </div>
+            <div class="category-marca">
+                            <h3>Aero Soft</h3>
+                            <span>Aromatizante Difusor</span>
             </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$3.740</span></div>
@@ -1756,6 +1959,10 @@ gtag('config', 'G-W12CHCEBQD');
                 </div>
                 <span>$3.980</span>
             </div>
+            <div class="category-marca">
+                            <h3>Aero Soft</h3>
+                            <span>Aromatizante Difusor</span>
+            </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$3.980</span></div>
                 <div class="wcf-right">
@@ -1782,6 +1989,10 @@ gtag('config', 'G-W12CHCEBQD');
                     <h3>Difusor Aromatico</h3>
                 </div>
                 <span>2.980</span>
+            </div>
+            <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Aromatizante Difusor</span>
             </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$2.980</span></div>
@@ -1810,6 +2021,10 @@ gtag('config', 'G-W12CHCEBQD');
                 </div>
                 <span>$1.470</span>
             </div>
+            <div class="category-marca">
+                            <h3></h3>
+                            <span>Sahumador</span>
+            </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$1.470</span></div>
                 <div class="wcf-right">
@@ -1836,6 +2051,10 @@ gtag('config', 'G-W12CHCEBQD');
                     <h3>Sahumador Cemento<br> Chico</h3>
                 </div>
                 <span>$1.030</span>
+            </div>
+            <div class="category-marca">
+                            <h3></h3>
+                            <span>Sahumador</span>
             </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$1.030</span></div>
@@ -1864,6 +2083,10 @@ gtag('config', 'G-W12CHCEBQD');
                 </div>
                 <span>$1.440</span>
             </div>
+            <div class="category-marca">
+                            <h3></h3>
+                            <span>Sahumador</span>
+            </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$1.440</span></div>
                 <div class="wcf-right">
@@ -1890,6 +2113,10 @@ gtag('config', 'G-W12CHCEBQD');
                     <h3>Conitos Cascada</h3>
                 </div>
                 <span>$890</span>
+            </div>
+            <div class="category-marca">
+                            <h3>Iluminarte</h3>
+                            <span>Cascada Conitos Humo</span>
             </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$890</span></div>
@@ -1918,6 +2145,10 @@ gtag('config', 'G-W12CHCEBQD');
                 </div>
                 <span>$1.540</span>
             </div>
+            <div class="category-marca">
+                            <h3>Vishnu</h3>
+                            <span>Cascada Conitos Humo</span>
+            </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$1.540</span></div>
                 <div class="wcf-right">
@@ -1944,6 +2175,10 @@ gtag('config', 'G-W12CHCEBQD');
                     <h3>Aceite Esencial</h3>
                 </div>
                 <span>$1.510</span>
+            </div>
+            <div class="category-marca">
+                            <h3>Vishnu</h3>
+                            <span>Aceite Horno</span>
             </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$1.510</span></div>
@@ -1972,6 +2207,10 @@ gtag('config', 'G-W12CHCEBQD');
                 </div>
                 <span>$1.370</span>
             </div>
+            <div class="category-marca">
+                            <h3>Ambar</h3>
+                            <span>Aceite Horno</span>
+            </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$1.370</span></div>
                 <div class="wcf-right">
@@ -1999,6 +2238,10 @@ gtag('config', 'G-W12CHCEBQD');
                 </div>
                 <span>$1.280</span>
             </div>
+            <div class="category-marca">
+                            <h3></h3>
+                            <span>Sahumo</span>
+            </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$1.280</span></div>
                 <div class="wcf-right">
@@ -2025,6 +2268,10 @@ gtag('config', 'G-W12CHCEBQD');
                     <h3>Lámpara de <br>Sal Rústica</h3>
                 </div>
                 <span>$13.520</span>
+            </div>
+            <div class="category-marca">
+                            <h3></h3>
+                            <span>Lampara</span>
             </div>
             <div class="card-footer">
                 <div class="wcf-left"><span class="price">$13.520</span></div>
