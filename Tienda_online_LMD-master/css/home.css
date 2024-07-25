@@ -29,9 +29,9 @@ nav a{
 }
 
 header{
-    background: #ffffea;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffffc4, #ffffea);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffffc4, #ffffea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: #f3f3f1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffea, #ffffea);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffea, #ffffea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     height: auto;
     padding: 48px;
     width: 100%;
@@ -89,8 +89,8 @@ img{
     height: 100px;
     width: 100%;
     background: #ffffea;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffffc4, #ffffea);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffffc4, #ffffea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: -webkit-linear-gradient(to right, #ffffea, #ffffea);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffea, #ffffea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
 .enlaces{

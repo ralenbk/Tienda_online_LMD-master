@@ -25,7 +25,7 @@ img {
 }
 body{
     color: var(--text-color);
-    background-color:#f5fbfc;
+    background-color: rgb(232, 223, 214);
 }
 .container{
     max-width: 1068px;
@@ -356,8 +356,8 @@ header{
     color: red;
 }
 .section-title{
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 1.5rem;
 }
@@ -369,7 +369,7 @@ header{
 .stock-advise{
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 @media (min-width: 768px){
@@ -377,17 +377,19 @@ header{
         font-size: 1.5rem;
     }
 }
-.informacion button{
-    border: none;
-    background: grey 0.3;
-    color: black;
+.informacion-button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 20%;
     margin-bottom: 40px;
-    padding: 0.3rem;
     font-weight: 700;
+    padding: 12px 30px;
+    border: 1px solid #313131;
+    background: rgb(156, 137, 137);
+    color: #fff;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(227, 246, 133, 0.22);
+    border-radius: 27px;
+    transition: all 0.05s ease-in-out;
 }
 .informacion button:hover{
     cursor: pointer;
@@ -402,7 +404,7 @@ header{
     margin-bottom: 10%;
     padding: 0.3rem;
 }
-.product-divisor-aromanza{
+/* .product-divisor-aromanza{
     background-image: url(../img/aromanza_logo.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -414,8 +416,8 @@ header{
     background-color: white;
     height: 10rem;
     
-}
-.product-divisor-sagrada{
+} */
+/* .product-divisor-sagrada{
     background-image: url(../img/sagrada_madre_logo.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -468,7 +470,7 @@ header{
     height: 18rem;
     background-size: cover;
     
-}
+} */
 .texto--desactivado{
     text-align: center;
     font-size: 3rem;
@@ -565,16 +567,16 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
 .price{
     font-weight: 500;
     font-size: 1.5rem;
-    color: #ffffbf;
+    color: transparent;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 10%;
+    bottom: 2px;
 }
 .price-product{
     font-weight: 500;
     font-size: 1.5rem;
-    color: #000000;
-    position: relative;
+    color: transparent;
+    
     
 
 }
@@ -808,7 +810,6 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
     .footer-common-section {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding-top: 20px;
         margin-left: 10px;
 
@@ -963,5 +964,231 @@ background-image: linear-gradient(62deg, black 0%, black 100%);
         padding: 1rem;
     }
 
+/* New product cards */
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
+body {
+    font-family: 'Muli', sans-serif;
+    background: rgb(232, 223, 214);
+}
+
+.shell {
+    padding: 80px 0;
+}
+
+.wsk-cp-product {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden; /* Para asegurarse de que los elementos hijos no sobresalgan */
+    background-image: url(../img/fondo-card.jpg);
+}
+
+.wsk-cp-img {
+    width: 100%;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.wsk-cp-img img {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    border-radius: 6px;
+}
+
+.wsk-cp-product:hover .wsk-cp-img img {
+    box-shadow: 0 19px 38px (243, 224, 199), 0 15px 12px rgb(243, 224, 199);
+}
+
+.wsk-cp-text {
+    padding-top: 15px;
+}
+
+.wsk-cp-text .category {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+  .wsk-cp-text .category > * {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+.wsk-cp-text .category > span {
+    padding: 12px 30px;
+    /* border: 1px solid #313131; */
+    background: transparent;
+    color: transparent;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 27px;
+    transition: all 0.05s ease-in-out;
+}
+
+.wsk-cp-product:hover .wsk-cp-text .category > span {
+    border-color: #ddd;
+    box-shadow: none;
+    padding: 11px 28px;
+}
+
+.wsk-cp-product:hover .wsk-cp-text .category {
+    margin-top: 0;
+}
+
+.wsk-cp-text .title-product {
+    text-align: center;
+}
+
+.wsk-cp-text .title-product h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.wsk-cp-text .description-prod p {
+    margin: 0;
+}
+
+  /* Truncate */
+.wsk-cp-text .description-prod {
+    text-align: center;
+    width: 100%;
+    height: 62px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    padding: 25px 0 5px;
+    border-top: 1px solid #ddd;
+}
+
+.card-footer:after,
+.card-footer:before {
+    content: '';
+    display: table;
+}
+
+.card-footer:after {
+    clear: both;
+}
+
+.card-footer .wcf-left {
+    float: left;
+}
+
+.card-footer .wcf-right {
+    float: right;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+a.buy-btn {
+    display: block;
+    color: #212121;
+    text-align: center;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    border: 1px solid #212121;
+    transition: all 0.2s ease-in-out;
+}
+
+a.buy-btn:hover,
+a.buy-btn:active,
+a.buy-btn:focus {
+    border-color: #FF9800;
+    background: #FF9800;
+    color: #fff;
+    text-decoration: none;
+}
+
+.wsk-btn {
+    display: inline-block;
+    color: #212121;
+    text-align: center;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    border-color: #FF9800;
+    background: #FF9800;
+    padding: 12px 30px;
+    border-radius: 27px;
+    margin: 0 5px;
+}
+
+.wsk-btn:hover,
+.wsk-btn:focus,
+.wsk-btn:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.red {
+    color: #F44336;
+    font-size: 22px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 991px) {
+    .wsk-cp-product {
+    margin: 40px auto;
+    }
+
+    .wsk-cp-product .wsk-cp-img img {
+    box-shadow: 0 19px 38px rgb(243, 224, 199), 0 15px 12px rgb(243, 224, 199);
+    }
+
+    .wsk-cp-product .wsk-cp-text .category > span {
+    border-color: #ddd;
+    box-shadow: none;
+    padding: 11px 28px;
+    }
+
+    .wsk-cp-product .wsk-cp-text .category {
+    margin-top: 0;
+    }
+
+    a.buy-btn {
+    border-color: #FF9800;
+    background: #FF9800;
+    color: #fff;
+    }
+}
+
+.wsk-cp-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wsk-cp-text button {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
 
 
