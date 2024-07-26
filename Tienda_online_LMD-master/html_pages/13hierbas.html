@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierbas</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W12CHCEBQD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W12CHCEBQD');
+</script>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="../home.html" class="logo-lau"><img src="../img/logo_lau3.png"></a>
+            <a href="../home.html" class="logo"><button class="button-48" role="button"><span class="text">Tienda</span></button></a>
+            <!-- <a href="contacto.html" class="logo"><button class="button-48" role="button"><span class="text">Contacto</span></button></a> -->
+            <!--Cart-icon-->
+            <div class="cart-icon">
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <span id="cart-count">0</span> 
+            </div>
+        </div>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Tu Carrito</h2>
+                <!--Content-->
+                <div class="cart-content-wrapper">
+                    <div class="cart-content"></div>
+                </div>    
+                <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!--Buy Button-->
+                    <button type="button" class="btn-buy">Realizar Pedido</button>
+                    <!--Cart Close-->
+                    <i class='bx bx-x ' id="close-cart"></i>
+            </div>
+    </header>
+    <!--Shop-->
+    <section class="shop container">
+        <h1 class="section-title producto-h1">Hierbas</h1>
+        <!--Content-->
+        <div class="shop-content">
+            <!--Producto-->
+            <div class="producto-box">
+                <!-- <img src="img/hierbas_prod.jpg.crdownload" alt="Product" class="product-img img-agregar-carrito"> -->
+                <div class="slider-frame">
+                    <ul>
+                        <li><img loading="lazy" src="../img/hierbas_prod_1.jpg" alt="Hierbas"></li>
+                        <li><img loading="lazy" src="../img/hierbas_prod_2.jpg" alt="Hierbas"></li>
+                        <li><img loading="lazy" src="../img/hierbas_prod_3.jpg" alt="Hierbas"></li>
+                        <li><img loading="lazy" src="../img/hierbas_prod_4.jpg" alt="Hierbas" class="product-img"></li>
+                    </ul>
+                </div>
+                <h2 class="product-title producto-hidden">Hierbas</h2>
+                <input class="formulario__submit add-cart" id="cart-icon" type="submit" value="Agregar al Carrito">
+                <span class="price-product">$490</span>
+            </div>
+            <!--Descripcion-->
+            <form class="formulario">
+                <h2 class="producto-h2"></h2>
+            <select id="product-select" class="formulario__campo">
+                <option value ="Seleccionar fragancias" class="formulario__option" disabled selected>-- Seleccionar fragancias --</option>
+                <option value="Salvia">Salvia</option>
+                <option value="Lavanda">Lavanda</option>
+                <option value="Lemon Grass">Lemon Grass</option>
+                <option value="Naranja">Naranja</option>
+                <option value="Té Verde">Té Verde</option>
+            </select> 
+            <div> <h2 class="producto-h2">Estos sobres botánicos entregan una parte de la naturaleza. A traves de estas delicadas hierbas.</h2>
+            <p class="producto-p">Contenido: Hierbas en sobre / 8 Gramos.</p>
+            </form>
+            
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <p class="footer--texto"> Ramiro Cavallero - Todos los derechos Reservados © 2023.</p>
+    </footer>   
+    <button class="buttons"><a href="https://wa.me/543404571018" class="whatsapp-btn"><i class='bx bxl-whatsapp' id="Whatsapp Button" ></i></a>
+    <!--Link to JS-->
+    <script src="../js/main.js"></script>
+</body>
+</html>
