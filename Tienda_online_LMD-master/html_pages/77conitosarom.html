@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conitos Cascada Aromanza</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W12CHCEBQD"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-W12CHCEBQD');
+</script>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="../home.html" class="logo-lau"><img src="../img/logo_lau3.png"></a>
+            <a href="../home.html" class="logo"><button class="button-48" role="button"><span class="text">Tienda</span></button></a>
+            <!-- <a href="contacto.html" class="logo"><button class="button-48" role="button"><span class="text">Contacto</span></button></a> -->
+            <!--Cart-icon-->
+            <div class="cart-icon">
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <span id="cart-count">0</span> 
+            </div>
+        </div>
+            <!--Cart-->
+            <div class="cart">
+                <h2 class="cart-title">Tu Carrito</h2>
+                <!--Content-->
+                <div class="cart-content-wrapper">
+                    <div class="cart-content"></div>
+                </div>    
+                <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!--Buy Button-->
+                    <button type="button" class="btn-buy">Realizar Pedido</button>
+                    <!--Cart Close-->
+                    <i class='bx bx-x ' id="close-cart"></i>
+            </div>
+    </header>
+    <!--Shop-->
+    <section class="shop container">
+        <h1 class="section-title producto-h1">Conitos Cascada Aromanza</h1>
+        <!--Content-->
+        <div class="shop-content">
+            <!--Producto-->
+            <div class="producto-box">
+                <div class="slider-frame">
+                    <ul>
+                        <li><img loading="lazy" src="../img/conitos-arom_1.webp" alt="Conitos Cascada Aromanza"></li>
+                        <li><img loading="lazy" src="../img/conitos-arom_2.webp" alt="Conitos Cascada Aromanza"></li>
+                        <li><img loading="lazy" src="../img/conitos-arom_3.webp" alt="Conitos Cascada Aromanza"></li>
+                        <li><img loading="lazy" src="../img/conitos-arom_4.webp" alt="Conitos Cascada Aromanza" class="product-img"></li>
+                    </ul>
+                </div>
+                <h2 class="product-title producto-hidden">Conitos Cascada Aromanza</h2>
+                <input class="formulario__submit add-cart" id="cart-icon" type="submit" value="Agregar al Carrito">
+                <span class="price-product">$2320</span>
+            </div>
+            <!--Descripcion-->
+            <form class="formulario">
+                <h2 class="producto-h2"></h2>
+            <select id="product-select" class="formulario__campo">
+                <option value ="Seleccionar fragancias" class="formulario__option" disabled selected>-- Seleccionar fragancias --</option>
+                <option value="Atrae Dinero">Atrae Dinero</option>
+                <option value="Berry Kiss">Berry Kiss</option>
+                <option value="Coconut">Coconut</option>
+                <option value="Energia Limpia">Energia Limpia</option>
+                <option value="Esencia de la India">Esencia de la India</option>
+                <option value="Frutos Rojos">Frutos Rojos</option>
+                <option value="Lavanda del Valle">Lavanda del Valle</option>
+                <option value="Naranja Pimienta">Naranja Pimienta</option>
+                <option value="Rosa Real">Rosa Real</option>
+                <option value="Sandalo Hindu">Sandalo Hindu</option>
+                <option value="Super Palo Santo">Super Palo Santo</option>
+                <option value="Vainilla Encantada">Vainilla Encantada</option>
+            </select> 
+            <div> <h2 class="producto-h2">Sahumerios cono premium para cascadas de humo decorativas. 5 veces más intenso el aroma.</h2>
+            <p class="producto-p">Contenido:  10 Conitos / Calidad Premium.</p>
+            </form>
+            
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <p class="footer--texto"> Ramiro Cavallero - Todos los derechos Reservados © 2023.</p>
+    </footer>   
+    <button class="buttons"><a href="https://wa.me/543404571018" class="whatsapp-btn"><i class='bx bxl-whatsapp' id="Whatsapp Button" ></i></a>
+    <!--Link to JS-->
+    <script src="../js/main.js"></script>
+</body>
+</html>
