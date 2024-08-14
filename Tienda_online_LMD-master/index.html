@@ -1,39 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Sahumo Time</title>
     <link rel="stylesheet" href="./css/home.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" id="icono" class="icono">Menú</a>
-                <div class="enlaces uno" id="enlaces">
-                    
-                    <a href="map.html">Puntos de Entrega📌</a>
-                    <a href="https://wa.me/543404571018">Contáctanos📞</a>
-                    <a href="https://www.instagram.com/sahumo_timeok?igsh=OHJoemkxYWx6MHAx">Nuestras Redes📱</a>
-                </div>
-            </nav>
-            <div class="textos">
-                <h1>Sahumo Time</h1>
-                <h2>Venta de Sahumerios y demás</h2>
-                <a href="home.html">Página Web💻</a>
-            </div>
-            <img src="./img/logo-st-arreglado.png" alt="">
-        </div>
+    <header class="header">
+        <div class="logo">Sahumo Time</div>
+        <nav class="nav">
+            <a href="#home" class="nav-link">Inicio</a>
+            <a href="#productos" class="nav-link">Productos</a>
+            <a href="#about-us" class="nav-link">Sobre Nosotros</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+        </nav>
     </header>
-    <div class="wave">
-        <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
-    </div>
-    <script src="./js/home.js"></script>
-</body>
 
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="bienestar">Encuentra los mejores sahumerios para tu bienestar</h1>
+            <button class="cta-button"><a href="home.html">Comprar ahora</a></button>
+            <button class="cta-button"><a href="#productos">Conoce más</a></button>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="service-item">
+                <img src="./img/check-3-sf.png" alt="Calidad">
+                <h3>Calidad Superior</h3>
+                <p>Solo los mejores ingredientes naturales.</p>
+            </div>
+            <div class="service-item">
+                <img src="./img/envio.png" alt="Envío">
+                <h3>Envío Rápido</h3>
+                <p>Entrega en 24 horas en áreas seleccionadas.</p>
+            </div>
+            <div class="service-item">
+                <img src="./img/soporte-sf.png" alt="Soporte">
+                <h3>Soporte 24/7</h3>
+                <p>Estamos aquí para ayudarte en cualquier momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="productos">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="./img/tibetano_prod_1.jpeg" alt="Producto 1" class="product-image">
+                    <h3>Tibetanos</h3>
+                    <p>Contenido:  8 Sahumerios Gruesos / Extra Fuertes / Duración aprox. 70'.</p>
+                </div>
+                <div class="product-card">
+                    <img src="./img/rama_prod_1.jpg" alt="Producto 2" class="product-image">
+                    <h3>Rama</h3>
+                    <p>Contenido: 8 sahumerios en Rama Extra Fuertes / Porta Sahumerios. / Duración aprox. 60'.</p>
+                </div>
+                <div class="product-card">
+                    <img src="./img/magistrales_nuevos_prod2.jpg" alt="Producto 3" class="product-image">
+                    <h3>Magistral</h3>
+                    <p>Contenido: 8 Sahumerios Magistrales Con Resinas Naturales \ Duración Aprox. 40'.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <section class="about" id="about-us">
+        <div class="container about-content">
+            <img src="./img/about-us.webp" alt="Sobre nosotros">
+            <div class="text">
+                <h2>Sobre Nosotros</h2>
+                <p>En Sahumo Time, nos comprometemos a ofrecer productos de la más alta calidad para tu bienestar y satisfacción. Cada sahumerio es cuidadosamente elaborado para asegurar una experiencia holística completa.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container" id="contacto">
+            <p>Sigue nuestras redes sociales</p>
+            <a href="https://wa.me/543404571018" class="social-link">WhatsApp</a>
+            <a href="https://www.instagram.com/sahumo_timeok?igsh=OHJoemkxYWx6MHAx" class="social-link">Instagram</a>
+        </div>
+        <script src="js/home.js"></script>
+    </footer>
+</body>
 </html>
